@@ -1,110 +1,74 @@
-import { useEffect, useState } from 'react';
-import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
+import { Code } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 
-interface Skill {
-  name: string;
-  level: number;
-  category: string;
-}
-
-interface SkillBarProps {
-  skill: Skill;
-  index: number;
-}
-
-function SkillBar({ skill, index }: SkillBarProps) {
-  const { ref, hasIntersected } = useIntersectionObserver({
-    threshold: 0.3,
-    freezeOnceVisible: true,
-  });
-
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    if (!hasIntersected) return;
-
-    const timer = setTimeout(() => {
-      setProgress(skill.level);
-    }, index * 100);
-
-    return () => clearTimeout(timer);
-  }, [hasIntersected, skill.level, index]);
-
-  return (
-    <div
-      ref={ref}
-      className={`space-y-2 ${hasIntersected ? 'animate-slide-in' : 'opacity-0'}`}
-      style={{ animationDelay: `${index * 50}ms` }}
-    >
-      <div className="flex justify-between items-center">
-        <span className="text-sm font-medium text-foreground">{skill.name}</span>
-        <span className="text-xs text-muted-foreground font-semibold">{skill.level}%</span>
-      </div>
-      <div className="glass-strong rounded-full p-1 border border-primary/20">
-        <Progress value={progress} className="h-2" />
-      </div>
-    </div>
-  );
-}
-
 export default function TechStackSection() {
-  const skills: Skill[] = [
-    // Languages
-    { name: 'Java', level: 90, category: 'Languages' },
-    { name: 'C', level: 75, category: 'Languages' },
-    { name: 'Python', level: 70, category: 'Languages' },
-    { name: 'JavaScript', level: 65, category: 'Languages' },
-    
-    // Backend
-    { name: 'Spring Boot', level: 60, category: 'Backend' },
-    { name: 'JDBC', level: 80, category: 'Backend' },
-    { name: 'MySQL', level: 75, category: 'Backend' },
-    
-    // DSA
-    { name: 'Arrays', level: 85, category: 'DSA' },
-    { name: 'HashMaps', level: 80, category: 'DSA' },
-    { name: 'Binary Search', level: 85, category: 'DSA' },
-    { name: 'Two Pointers', level: 80, category: 'DSA' },
-    
-    // Tools
-    { name: 'Git', level: 85, category: 'Tools' },
-    { name: 'IntelliJ', level: 90, category: 'Tools' },
-    { name: 'VSCode', level: 85, category: 'Tools' },
-    
-    // Emerging
-    { name: 'GenAI', level: 50, category: 'Emerging' },
-    { name: 'Web3/Blockchain', level: 45, category: 'Emerging' },
-    { name: 'Cloud', level: 40, category: 'Emerging' },
+  const languages = [
+    { name: 'Java', level: 90 },
+    { name: 'C', level: 70 },
+    { name: 'Python', level: 65 },
+    { name: 'JavaScript', level: 55 },
   ];
 
-  const categories = ['Languages', 'Backend', 'DSA', 'Tools', 'Emerging'];
+  const dsaSkills = [
+    { name: 'Arrays & Strings', level: 85 },
+    { name: 'HashMaps', level: 80 },
+    { name: 'Binary Search', level: 75 },
+    { name: 'Two Pointers', level: 75 },
+  ];
 
   return (
     <section id="techstack" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
+      {/* Decorative shapes */}
+      <div className="absolute top-40 left-10 w-64 h-64 rounded-full border border-border/30" />
+      <div className="absolute bottom-40 right-10 w-48 h-96 border border-border/20" style={{ transform: 'rotate(20deg)' }} />
+
+      <div className="container mx-auto max-w-6xl relative">
+        <div className="text-center mb-16">
           <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
-            Tech Stack & Skills
+            Tech Stack
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Technologies and tools I work with
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-          {categories.map((category) => (
-            <div key={category} className="glass-bright rounded-2xl p-6 gradient-border-bright hover:glow-primary transition-all duration-300">
-              <h3 className="text-2xl font-bold text-primary mb-6">{category}</h3>
-              <div className="space-y-4">
-                {skills
-                  .filter((skill) => skill.category === category)
-                  .map((skill, index) => (
-                    <SkillBar key={skill.name} skill={skill} index={index} />
-                  ))}
-              </div>
+        <div className="grid xl:grid-cols-2 gap-12">
+          {/* Languages */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Code className="w-8 h-8 text-primary" />
+              <h3 className="text-3xl font-bold text-foreground">Languages</h3>
             </div>
-          ))}
+
+            {languages.map((skill) => (
+              <div key={skill.name} className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-semibold text-foreground">{skill.name}</span>
+                  <span className="text-sm text-muted-foreground font-semibold">{skill.level}%</span>
+                </div>
+                <div className="glass-strong rounded-full p-1 border border-primary/20">
+                  <Progress value={skill.level} className="h-3" />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* DSA */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Code className="w-8 h-8 text-secondary" />
+              <h3 className="text-3xl font-bold text-foreground">DSA</h3>
+            </div>
+
+            {dsaSkills.map((skill) => (
+              <div key={skill.name} className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-semibold text-foreground">{skill.name}</span>
+                  <span className="text-sm text-muted-foreground font-semibold">{skill.level}%</span>
+                </div>
+                <div className="glass-strong rounded-full p-1 border border-secondary/20">
+                  <Progress value={skill.level} className="h-3" />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

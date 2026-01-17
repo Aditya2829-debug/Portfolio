@@ -5,11 +5,14 @@ import AchievementsSection from '@/components/portfolio/AchievementsSection';
 import AboutSection from '@/components/portfolio/AboutSection';
 import TechStackSection from '@/components/portfolio/TechStackSection';
 import ContactSection from '@/components/portfolio/ContactSection';
-import FloatingNav from '@/components/portfolio/FloatingNav';
+import Header from '@/components/portfolio/Header';
 
 export default function Portfolio() {
   return (
     <div className="relative min-h-screen">
+      {/* Header */}
+      <Header />
+
       {/* Enhanced animated background particles with brighter colors */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
@@ -22,15 +25,12 @@ export default function Portfolio() {
       <main className="relative z-10">
         <HeroSection />
         <StatsSection />
+        <TechStackSection />
         <ProjectsSection />
         <AchievementsSection />
         <AboutSection />
-        <TechStackSection />
         <ContactSection />
       </main>
-
-      {/* Floating navigation */}
-      <FloatingNav />
     </div>
   );
 }

@@ -1,25 +1,6 @@
-import { useEffect, useState } from 'react';
-import { Github, Linkedin, Code2, Trophy, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Github, Linkedin, Code2, Trophy, Award, BarChart } from 'lucide-react';
 
 export default function HeroSection() {
-  const [typedText, setTypedText] = useState('');
-  const fullText = 'Java Backend Developer | DSA Enthusiast | Competitive Programmer';
-
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (index <= fullText.length) {
-        setTypedText(fullText.slice(0, index));
-        index++;
-      } else {
-        clearInterval(timer);
-      }
-    }, 50);
-
-    return () => clearInterval(timer);
-  }, []);
-
   const socialLinks = [
     {
       name: 'GitHub',
@@ -41,79 +22,56 @@ export default function HeroSection() {
       url: 'https://codeforces.com/profile/Not_Aizen',
       icon: Trophy,
     },
+    {
+      name: 'CodeChef',
+      url: 'https://www.codechef.com/',
+      icon: Award,
+    },
+    {
+      name: 'HackerRank',
+      url: 'https://www.hackerrank.com/',
+      icon: BarChart,
+    },
   ];
 
-  const scrollToNext = () => {
-    const statsSection = document.getElementById('stats');
-    statsSection?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid xl:grid-cols-2 gap-12 items-center">
-          {/* Profile Image */}
-          <div className="flex justify-center xl:order-2">
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-2xl opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-glow" />
-              <div className="relative glass-bright rounded-full p-3 gradient-border-bright">
-                <img
-                  src="https://miaoda-conversation-file.s3cdn.medo.dev/user-8zwnaxo7d7uo/20260117/file-8zwo1ojh301u.jpg"
-                  alt="Aditya Srivastava"
-                  className="w-64 h-64 xl:w-80 xl:h-80 rounded-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 py-32">
+      {/* Decorative circles */}
+      <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-border/30" />
+      <div className="absolute bottom-32 right-32 w-32 h-32 rounded-full border border-border/30" />
+      <div className="absolute top-1/2 right-1/4 w-64 h-64 border border-border/20" style={{ transform: 'rotate(15deg)' }} />
 
-          {/* Content */}
-          <div className="text-center xl:text-left xl:order-1 space-y-6">
-            <div className="space-y-4">
-              <h1 className="text-5xl xl:text-7xl font-bold gradient-text animate-scale-in">
-                ADITYA SRIVASTAVA
-              </h1>
-              <div className="h-16 xl:h-20">
-                <p className="text-lg xl:text-xl text-secondary font-medium min-h-[3rem]">
-                  {typedText}
-                  <span className="animate-pulse">|</span>
-                </p>
-              </div>
-            </div>
+      <div className="container mx-auto max-w-5xl">
+        {/* Main card */}
+        <div className="glass-bright rounded-3xl p-12 xl:p-16 gradient-border-bright text-center space-y-8">
+          <h1 className="text-5xl xl:text-7xl font-bold">
+            <span className="gradient-text">Aditya Srivastava</span>
+          </h1>
 
-            <div className="glass-bright rounded-2xl p-6 xl:p-8 gradient-border-bright animate-fade-in">
-              <p className="text-base xl:text-lg text-foreground leading-relaxed">
-                First-year CSE-AI student at KIET passionate about backend systems & algorithms
-              </p>
-            </div>
+          <p className="text-2xl xl:text-3xl text-foreground font-semibold">
+            Competitive Programmer
+          </p>
 
-            {/* Social Links */}
-            <div className="flex flex-wrap gap-4 justify-center xl:justify-start">
-              {socialLinks.map((link, index) => (
-                <Button
-                  key={link.name}
-                  variant="outline"
-                  size="lg"
-                  className="glass-strong hover:glass-bright hover:scale-105 hover:glow-primary transition-all duration-300 border-primary/30 text-primary font-semibold"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                  onClick={() => window.open(link.url, '_blank')}
-                >
-                  <link.icon className="w-5 h-5 mr-2" />
-                  {link.name}
-                </Button>
-              ))}
-            </div>
+          <p className="text-lg xl:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
+            First-year CSE-AI student at KIET passionate about backend systems & algorithms
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex items-center justify-center gap-6 pt-4">
+            {socialLinks.map((link) => (
+              <button
+                key={link.name}
+                onClick={() => window.open(link.url, '_blank')}
+                className="p-3 rounded-lg glass-strong hover:glass-bright hover:glow-primary transition-all duration-300"
+                aria-label={link.name}
+              >
+                <link.icon className="w-6 h-6 text-foreground" />
+              </button>
+            ))}
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <button
-        onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 glass-strong rounded-full p-3 animate-bounce hover:glass-bright hover:glow-primary transition-all cursor-pointer"
-        aria-label="Scroll to next section"
-      >
-        <ChevronDown className="w-6 h-6 text-primary" />
-      </button>
     </section>
   );
 }
+
