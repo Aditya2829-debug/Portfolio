@@ -61,34 +61,5 @@ export default function StatsSection() {
     },
   ];
 
-  return (
-    <section id="stats" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
-            Competitive Programming Stats
-          </h2>
-          <p className="text-lg text-white">
-            170+ problems solved across multiple platforms
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <div key={stat.platform} className={`animate-slide-in-up stagger-${index + 1}`}>
-              <StatCard {...stat} />
-            </div>
-          ))}
-        </div>
-
-        {/* Total Problems Solved */}
-        <div className="mt-8 text-center animate-scale-in stagger-5">
-          <div className="glass-bright rounded-2xl p-8 gradient-border-bright inline-block glow-accent hover-tilt group cursor-pointer">
-            <div className="text-5xl font-bold gradient-text mb-2 group-hover:scale-125 transition-transform duration-300">170+</div>
-            <p className="text-lg text-white font-semibold">Total Problems Solved</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return (<section id="stats" className="py-20 px-4">{"Competitive Programming Stats"}</section>);
 }
