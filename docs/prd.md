@@ -3,21 +3,21 @@
 ## 1. Application Overview
 
 ### 1.1 Application Name
-Aditya Srivastava - Developer Portfolio
-
+Aditya Srivastava - Developer Portfolio\n
 ### 1.2 Application Description
-A modern, visually stunning developer portfolio website with glassmorphism design and advanced scrolling animations, showcasing Aditya Srivastava's skills, projects, competitive programming achievements, and professional profile in a unique and memorable way.
+A modern, visually stunning developer portfolio website with glassmorphism design and extensive advanced animations, showcasing Aditya Srivastava's skills, projects, competitive programming achievements, and professional profile in a unique and memorable way.
 
 ### 1.3 Target Users
 Recruiters, potential employers, collaborators, and the tech community interested in Aditya's work and capabilities.
-
----
+\n---
 
 ## 2. Design Requirements
 
 ### 2.1 Design Style
 - Glassmorphism/frosted glass aesthetic throughout the entire website
-- Use backdrop-filter: blur() with semi-transparent backgrounds\n- Modern gradient background: deep blue to purple (#0f172a → #1e1b4b → #312e81)\n- Subtle animated particles or geometric shapes in background
+- Use backdrop-filter: blur() with semi-transparent backgrounds
+- Modern gradient background: deep blue to purple (#0f172a → #1e1b4b → #312e81)
+- Subtle animated particles or geometric shapes in background
 - Glass cards with rgba backgrounds and border glow effects
 - Smooth animations and micro-interactions
 - Modern, unique layout\n- Advanced scrolling animations and parallax effects
@@ -27,11 +27,9 @@ Recruiters, potential employers, collaborators, and the tech community intereste
 - Gradient borders on glass elements
 - Animated counters for statistics
 - Platform logos and color-coded rating badges
-- Visual skill bars with glass containers
-- Social media icons in glass buttons
+- Visual skill bars with glass containers\n- Social media icons in glass buttons
 - Scroll-triggered animations for each section
-- Parallax scrolling effects for background elements
-- Fade-in, slide-in, and scale animations on scroll
+- Parallax scrolling effects for background elements\n- Fade-in, slide-in, and scale animations on scroll
 
 ### 2.3 Unique Design Features
 - Horizontal scrolling project showcase section
@@ -43,37 +41,43 @@ Recruiters, potential employers, collaborators, and the tech community intereste
 - Staggered animation delays for list items
 - Morphing shapes in background that respond to scroll position
 
----
-\n## 3. Page Structure and Content
+---\n
+## 3. Page Structure and Content
 
-### 3.1 Hero Section
-- Display name: ADITYA SRIVASTAVA with animated gradient text effect
+### 3.1 Hero Section\n- Display name: ADITYA SRIVASTAVA with animated gradient text effect
 - Animated typing subtitle: Java Backend Developer | DSA Enthusiast | Competitive Programmer
 - Bio: First-year CSE-AI student at KIET passionate about backend systems & algorithms
 - Glassmorphism card with gradient border and 3D tilt effect
-- Profile photo: Use WhatsApp Image 2026-01-17 at 5.55.44 PM.jpeg with subtle zoom animation on scroll
-- Social media links in glass buttons with hover glow effects:\n  - GitHub: https://github.com/Aditya2829-debug
+- Profile photo: Use WhatsApp Image 2026-01-17 at 5.55.44 PM.jpeg with subtle zoom animation on scroll\n- Social media links in glass buttons with hover glow effects:
+  - GitHub: https://github.com/Aditya2829-debug
   - LinkedIn: https://www.linkedin.com/in/aditya-srivastava-29884a380?utm_source=share_via&utm_content=profile&utm_medium=member_android
   - LeetCode: https://leetcode.com/u/ArchitectOfSilence/
   - CodeForces: https://codeforces.com/profile/Not_Aizen
-  - CodeChef\n  - HackerRank
+  - CodeChef
+  - HackerRank
 - Scroll indicator with animated arrow
-\n### 3.2 Competitive Programming Stats Section
+
+### 3.2 Competitive Programming Stats Section
 Create an eye-catching stats dashboard with glass cards and scroll animations:
-- LeetCode: 1530 Rating (max)\n- CodeChef: 1207 Rating
-- CodeForces: 50+ day streak, Newbie rank
-- HackerRank: 5-star Java badge
+- LeetCode: 1530 Rating (max)
+- CodeChef: 1207 Rating
+- CodeForces: 50+ day streak, Newbie rank\n- HackerRank: 5-star Java badge
 - Total: 170+ problems solved
 - Use animated counters that trigger on scroll into view
 - Platform logos with subtle pulse animations
 - Color-coded rating badges with glow effects
 - Cards appear with staggered fade-in and slide-up animations
 
-### 3.3 Projects Section
-Horizontal scrolling showcase with 3 project cards featuring glassmorphism:\n\n**Project 1: Green AI Analyser**
+### 3.3 Projects Section\nHorizontal scrolling showcase with 3 project cards featuring glassmorphism:
+
+**Project 1: Green AI Analyser**
 - Description: AI carbon footprint calculator for Net Zero. InnoTech Hackathon project
-- Tech Stack: Python, AI/ML, Data Analytics\n\n**Project 2: College Club Website**
-- Description: Tech club portal with event management\n- Tech Stack: HTML, CSS, JavaScript\n
+- Tech Stack: Python, AI/ML, Data Analytics
+
+**Project 2: College Club Website**
+- Description: Tech club portal with event management
+- Tech Stack: HTML, CSS, JavaScript
+
 **Project 3: Bank Management System**
 - Description: Java desktop app with Swing/JavaFX GUI
 - Tech Stack: Java, Swing, JavaFX, JDBC, MySQL
@@ -82,8 +86,7 @@ Horizontal scrolling showcase with 3 project cards featuring glassmorphism:\n\n*
 - Each card features 3D tilt effect on hover
 - Smooth horizontal scroll with snap points
 - Cards reveal with scale and fade animations
-- Tech stack tags with subtle hover animations
-
+- Tech stack tags with subtle hover animations\n
 ### 3.4 Achievements Section
 Glass cards timeline with scroll-triggered reveal animations:
 - Smart India Hackathon 2025 participant
@@ -96,108 +99,147 @@ Glass cards timeline with scroll-triggered reveal animations:
 - Achievement cards slide in from alternating sides
 
 ### 3.5 About Section
-Content: First-year CSE-AI student at KIET Group of Institutions, passionate about Java backend development and algorithmic problem-solving. Solved 172+ problems across platforms, achieved LeetCode 1530 rating. Currently learning Spring Boot and exploring GenAI & Web3. Active in Google Developers Group, DevUp, and Technocrats. Seeking internship opportunities.\n- Text reveals with fade-in animation on scroll
-- Background pattern morphs as section comes into view
+Content: First-year CSE-AI student at KIET Group of Institutions, passionate about Java backend development and algorithmic problem-solving. Solved 172+ problems across platforms, achieved LeetCode 1530 rating. Currently learning Spring Boot and exploring GenAI & Web3. Active in Google Developers Group, DevUp, and Technocrats. Seeking internship opportunities.
+- Text reveals with fade-in animation on scroll\n- Background pattern morphs as section comes into view
 - Glass container with subtle parallax effect
 \n### 3.6 Tech Stack Section
-Visual skill bars with glass containers and animated progress fills:
-\n**Languages:**
+Visual skill bars with glass containers and animated progress fills:\n
+**Languages:**
 - Java (primary)
-- C\n- Python
-- JavaScript\n\n**Backend:**
-- Spring Boot (learning)
+- C
+- Python
+- JavaScript
+
+**Backend:**\n- Spring Boot (learning)
 - JDBC
-- MySQL
-\n**DSA:**
-- Arrays\n- HashMaps
+- MySQL\n
+**DSA:**\n- Arrays
+- HashMaps
 - Binary Search
 - Two Pointers
-
-**Tools:**
+\n**Tools:**
 - Git
 - IntelliJ\n- VSCode
-\n**Emerging:**
-- GenAI\n- Web3/Blockchain
-- Cloud\n\n- Skill bars animate fill on scroll into view
-- Each category appears with staggered timing
-- Icons float in with scale animation
+
+**Emerging:**
+- GenAI
+- Web3/Blockchain
+- Cloud
+
+- Skill bars animate fill on scroll into view
+- Each category appears with staggered timing\n- Icons float in with scale animation
 - Progress bars have gradient fills with glow effect
 
 ### 3.7 Contact Section
 - Email: adityareachme1048@gmail.com
-- GitHub: https://github.com/Aditya2829-debug\n- Location: Kanpur, India
+- GitHub: https://github.com/Aditya2829-debug
+- Location: Kanpur, India
 - Contact form with glass input fields
 - Animated send button with ripple effect
 - Social links with magnetic hover effect
 
----
-\n## 4. Functional Requirements
+---\n
+## 4. Functional Requirements
 
-### 4.1 Animations
-- Typing animation for hero subtitle
+### 4.1 Scroll Animations
 - Animated counters for competitive programming stats that trigger on scroll
 - Smooth scroll animations throughout the site
 - Parallax scrolling for background elements
 - Fade-in animations for sections as they enter viewport
-- Slide-in animations from various directions
-- Scale and rotate animations on scroll
+- Slide-in animations from various directions\n- Scale and rotate animations on scroll
 - Staggered animations for list items and cards
-- Hover effects on glass cards with 3D tilt
-- Micro-interactions on buttons and links
-- Background particle/geometric shape animations
-- Progress bar animations\n- Morphing shape transitions
-
-### 4.2 Scroll Interactions
-- Scroll-triggered animations for each section
-- Parallax effects on background layers
-- Horizontal scrolling for projects section
-- Smooth snap scrolling for project cards
+- Progress bar animations
+- Morphing shape transitions
 - Reveal animations based on scroll position
 - Progress indicator showing scroll depth
-- Floating navigation with active section highlighting
-- Scroll-to-top button with smooth animation
+- Floating navigation with active section highlighting\n- Scroll-to-top button with smooth animation
 
-### 4.3 Interactivity
-- Clickable social media icons linking to respective profiles
-- Responsive glass cards with 3D hover effects
+### 4.2 Hover Animations
+- 3D tilt effect on glass cards\n- Glow effect on social media buttons
+- Scale and lift animation on project cards
+- Color shift on navigation dots
+- Ripple effect on contact form button
+- Magnetic cursor effect on buttons and links
+- Border glow animation on glass elements
+- Icon bounce animation on skill items
+- Underline slide animation on text links
+- Background gradient shift on cards
+- Shadow expansion on interactive elements
+- Rotation effect on platform logos
+- Pulse animation on achievement badges
+- Tech stack tag color transition
+- Profile photo zoom and brightness increase
+
+### 4.3 Loading and Entry Animations
+- Typing animation for hero subtitle
+- Initial page load animation with logo reveal
+- Sequential fade-in of hero section elements
+- Particle system initialization animation
+- Background gradient transition on load
+- Navigation menu slide-in animation
+\n### 4.4 Continuous Animations
+- Background particle/geometric shape animations
+- Subtle pulse animations on platform logos
+- Floating animation on navigation dots
+- Gradient text color cycling
+- Ambient glow breathing effect on glass borders
+- Rotating shapes in background
+- Animated scroll indicator arrow
+\n### 4.5 Micro-interactions
+- Button press animation with scale down
+- Input field focus animation with border glow
+- Checkbox and radio button custom animations
+- Dropdown menu slide and fade
+- Toast notification slide-in
+- Loading spinner on form submission
+- Success checkmark animation
+- Error shake animation
+
+### 4.6 Interactivity
+- Clickable social media icons linking to respective profiles\n- Responsive glass cards with 3D hover effects
 - Smooth navigation between sections
-- Interactive skill bars\n- Magnetic cursor effect on buttons and links
+- Interactive skill bars
+- Magnetic cursor effect on buttons and links
 - Animated contact form with validation
 - Hover glow effects on interactive elements
-\n### 4.4 Responsive Design
+- Horizontal scrolling for projects section
+- Smooth snap scrolling for project cards
+
+### 4.7 Responsive Design
 - Mobile-friendly layout\n- Tablet optimization
 - Desktop optimization
-- Glassmorphism effects maintained across all devices
-- Scroll animations adapted for mobile performance
+- Glassmorphism effects maintained across all devices\n- Scroll animations adapted for mobile performance
 - Touch-friendly interactions
 
 ---
-
-## 5. Technical Notes
-
+\n## 5. Technical Notes\n
 ### 5.1 Images
 - Profile photo: WhatsApp Image 2026-01-17 at 5.55.44 PM.jpeg (to be used in Hero Section)
 - Additional image: WhatsApp Image 2026-01-08 at 9.25.57 PM.jpeg (available for use if needed)
 
 ### 5.2 External Links
 - All social media and competitive programming platform links must be functional and open in new tabs
-\n### 5.3 Performance\n- Optimize glassmorphism effects for performance
-- Ensure smooth animations without lag
+
+### 5.3 Performance
+- Optimize glassmorphism effects for performance\n- Ensure smooth animations without lag
 - Lazy load images and heavy elements
 - Use intersection observer for scroll-triggered animations
-- Optimize animation performance with CSS transforms
-- Implement smooth scrolling with requestAnimationFrame
+- Optimize animation performance with CSS transforms\n- Implement smooth scrolling with requestAnimationFrame
+- Use GPU acceleration for animations
+- Debounce scroll and resize events
 
----
-
+---\n
 ## 6. Additional Requirements
 
 - Professional and modern appearance throughout
 - Glassmorphism design consistently applied to all sections
 - Color-coded elements for different platforms and achievements
-- Clear visual hierarchy\n- Easy navigation between sections with floating nav dots
+- Clear visual hierarchy
+- Easy navigation between sections with floating nav dots
 - Impressive visual presentation suitable for showcasing to recruiters and employers
 - Unique scrolling experience that sets portfolio apart from standard designs
 - Smooth performance across all devices and browsers
 - Accessibility considerations for animations (respect prefers-reduced-motion)
 - Loading animation on initial page load
+- Rich variety of hover animations on all interactive elements
+- Layered animation effects for depth and visual interest

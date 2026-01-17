@@ -20,31 +20,31 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="py-20 px-4">
-      {/* Decorative shapes */}
-      <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-border/30" />
-      <div className="absolute bottom-20 right-20 w-96 h-32 border border-border/20" style={{ transform: 'rotate(-10deg)' }} />
+      {/* Decorative shapes with animations */}
+      <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-border/30 animate-float" />
+      <div className="absolute bottom-20 right-20 w-96 h-32 border border-border/20 animate-spin-slow" style={{ transform: 'rotate(-10deg)' }} />
 
       <div className="container mx-auto max-w-6xl relative">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
             Projects
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.title}
-              className="glass-bright rounded-2xl p-8 gradient-border-bright hover:glow-secondary transition-all duration-300"
+              className={`glass-bright rounded-2xl p-8 gradient-border-bright hover-lift hover-glow transition-all duration-300 group animate-scale-in stagger-${index + 1}`}
             >
-              <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">{project.title}</h3>
               <p className="text-white/80 mb-6 leading-relaxed">{project.description}</p>
 
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 rounded-full glass-strong text-sm text-white font-medium"
+                    className="px-3 py-1 rounded-full glass-strong text-sm text-white font-medium hover-bounce cursor-pointer"
                   >
                     {tech}
                   </span>
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
               </div>
 
               {project.status && (
-                <div className="mt-4 inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-semibold">
+                <div className="mt-4 inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-semibold animate-pulse">
                   {project.status}
                 </div>
               )}

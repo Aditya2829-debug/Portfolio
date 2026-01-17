@@ -18,12 +18,12 @@ export default function TechStackSection() {
 
   return (
     <section id="techstack" className="py-20 px-4">
-      {/* Decorative shapes */}
-      <div className="absolute top-40 left-10 w-64 h-64 rounded-full border border-border/30" />
-      <div className="absolute bottom-40 right-10 w-48 h-96 border border-border/20" style={{ transform: 'rotate(20deg)' }} />
+      {/* Decorative shapes with animations */}
+      <div className="absolute top-40 left-10 w-64 h-64 rounded-full border border-border/30 animate-float" />
+      <div className="absolute bottom-40 right-10 w-48 h-96 border border-border/20 animate-spin-slow" style={{ transform: 'rotate(20deg)' }} />
 
       <div className="container mx-auto max-w-6xl relative">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
             Tech Stack
           </h2>
@@ -31,19 +31,19 @@ export default function TechStackSection() {
 
         <div className="grid xl:grid-cols-2 gap-12">
           {/* Languages */}
-          <div className="space-y-8">
-            <div className="flex items-center gap-3 mb-6">
-              <Code className="w-8 h-8 text-primary" />
+          <div className="space-y-8 animate-slide-in-left">
+            <div className="flex items-center gap-3 mb-6 group">
+              <Code className="w-8 h-8 text-primary group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
               <h3 className="text-3xl font-bold text-white">Languages</h3>
             </div>
 
-            {languages.map((skill) => (
-              <div key={skill.name} className="space-y-3">
+            {languages.map((skill, index) => (
+              <div key={skill.name} className={`space-y-3 animate-slide-in-left stagger-${index + 1} group`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-lg font-semibold text-white">{skill.name}</span>
-                  <span className="text-sm text-white font-semibold">{skill.level}%</span>
+                  <span className="text-lg font-semibold text-white group-hover:text-primary transition-colors duration-300">{skill.name}</span>
+                  <span className="text-sm text-white font-semibold group-hover:scale-125 transition-transform duration-300">{skill.level}%</span>
                 </div>
-                <div className="glass-strong rounded-full p-1 border border-primary/20">
+                <div className="glass-strong rounded-full p-1 border border-primary/20 hover-glow cursor-pointer">
                   <Progress value={skill.level} className="h-3" />
                 </div>
               </div>
@@ -51,19 +51,19 @@ export default function TechStackSection() {
           </div>
 
           {/* DSA */}
-          <div className="space-y-8">
-            <div className="flex items-center gap-3 mb-6">
-              <Code className="w-8 h-8 text-secondary" />
+          <div className="space-y-8 animate-slide-in-right">
+            <div className="flex items-center gap-3 mb-6 group">
+              <Code className="w-8 h-8 text-secondary group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
               <h3 className="text-3xl font-bold text-white">DSA</h3>
             </div>
 
-            {dsaSkills.map((skill) => (
-              <div key={skill.name} className="space-y-3">
+            {dsaSkills.map((skill, index) => (
+              <div key={skill.name} className={`space-y-3 animate-slide-in-right stagger-${index + 1} group`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-lg font-semibold text-white">{skill.name}</span>
-                  <span className="text-sm text-white font-semibold">{skill.level}%</span>
+                  <span className="text-lg font-semibold text-white group-hover:text-secondary transition-colors duration-300">{skill.name}</span>
+                  <span className="text-sm text-white font-semibold group-hover:scale-125 transition-transform duration-300">{skill.level}%</span>
                 </div>
-                <div className="glass-strong rounded-full p-1 border border-secondary/20">
+                <div className="glass-strong rounded-full p-1 border border-secondary/20 hover-glow cursor-pointer">
                   <Progress value={skill.level} className="h-3" />
                 </div>
               </div>

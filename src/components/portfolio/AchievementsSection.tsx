@@ -36,28 +36,28 @@ export default function AchievementsSection() {
 
   return (
     <section id="achievements" className="py-20 px-4">
-      {/* Decorative shapes */}
-      <div className="absolute top-20 left-32 w-64 h-64 rounded-full border border-border/30" />
-      <div className="absolute bottom-20 right-20 w-48 h-48 rounded-full border border-border/30" />
+      {/* Decorative shapes with animations */}
+      <div className="absolute top-20 left-32 w-64 h-64 rounded-full border border-border/30 animate-float" />
+      <div className="absolute bottom-20 right-20 w-48 h-48 rounded-full border border-border/30 animate-float stagger-3" />
 
       <div className="container mx-auto max-w-6xl relative">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
             Achievements
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {achievements.map((achievement) => (
+          {achievements.map((achievement, index) => (
             <div
               key={achievement.title}
-              className="flex items-start gap-6 glass-bright rounded-2xl p-8 gradient-border-bright hover:glow-primary transition-all duration-300"
+              className={`flex items-start gap-6 glass-bright rounded-2xl p-8 gradient-border-bright hover-lift hover-glow transition-all duration-300 group animate-slide-in-up stagger-${(index % 6) + 1}`}
             >
-              <div className="flex-shrink-0 p-3 rounded-xl glass-strong">
+              <div className="flex-shrink-0 p-3 rounded-xl glass-strong group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
                 {achievement.icon}
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">{achievement.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors duration-300">{achievement.title}</h3>
                 <p className="text-white/80">{achievement.description}</p>
               </div>
             </div>
