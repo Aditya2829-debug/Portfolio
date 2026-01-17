@@ -14,7 +14,7 @@ export default function AchievementsSection() {
     },
     {
       title: 'LeetCode 1530 Rating',
-      description: 'Achieved Knight badge milestone',
+      description: 'On track to achieve LeetCode Knight badge',
       icon: <Award className="w-6 h-6 text-primary" />,
     },
     {
