@@ -34,14 +34,14 @@ export default function TechStackSection() {
           <div className="space-y-8">
             <div className="flex items-center gap-3 mb-6">
               <Code className="w-8 h-8 text-primary" />
-              <h3 className="text-3xl font-bold text-foreground">Languages</h3>
+              <h3 className="text-3xl font-bold text-white">Languages</h3>
             </div>
 
             {languages.map((skill) => (
               <div key={skill.name} className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-lg font-semibold text-foreground">{skill.name}</span>
-                  <span className="text-sm text-muted-foreground font-semibold">{skill.level}%</span>
+                  <span className="text-lg font-semibold text-white">{skill.name}</span>
+                  <span className="text-sm text-white font-semibold">{skill.level}%</span>
                 </div>
                 <div className="glass-strong rounded-full p-1 border border-primary/20">
                   <Progress value={skill.level} className="h-3" />
@@ -54,14 +54,14 @@ export default function TechStackSection() {
           <div className="space-y-8">
             <div className="flex items-center gap-3 mb-6">
               <Code className="w-8 h-8 text-secondary" />
-              <h3 className="text-3xl font-bold text-foreground">DSA</h3>
+              <h3 className="text-3xl font-bold text-white">DSA</h3>
             </div>
 
             {dsaSkills.map((skill) => (
               <div key={skill.name} className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-lg font-semibold text-foreground">{skill.name}</span>
-                  <span className="text-sm text-muted-foreground font-semibold">{skill.level}%</span>
+                  <span className="text-lg font-semibold text-white">{skill.name}</span>
+                  <span className="text-sm text-white font-semibold">{skill.level}%</span>
                 </div>
                 <div className="glass-strong rounded-full p-1 border border-secondary/20">
                   <Progress value={skill.level} className="h-3" />

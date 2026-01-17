@@ -57,8 +57,8 @@ export default function AchievementsSection() {
                 {achievement.icon}
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">{achievement.title}</h3>
-                <p className="text-muted-foreground">{achievement.description}</p>
+                <h3 className="text-xl font-bold text-white mb-2">{achievement.title}</h3>
+                <p className="text-white/80">{achievement.description}</p>
               </div>
             </div>
           ))}

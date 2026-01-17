@@ -20,19 +20,19 @@ export default function Header() {
           <nav className="flex items-center gap-8">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               Contact
             </button>

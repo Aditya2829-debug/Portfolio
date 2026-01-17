@@ -41,33 +41,49 @@ export default function HeroSection() {
       <div className="absolute bottom-32 right-32 w-32 h-32 rounded-full border border-border/30" />
       <div className="absolute top-1/2 right-1/4 w-64 h-64 border border-border/20" style={{ transform: 'rotate(15deg)' }} />
 
-      <div className="container mx-auto max-w-5xl">
-        {/* Main card */}
-        <div className="glass-bright rounded-3xl p-12 xl:p-16 gradient-border-bright text-center space-y-8">
-          <h1 className="text-5xl xl:text-7xl font-bold">
-            <span className="gradient-text">Aditya Srivastava</span>
-          </h1>
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid xl:grid-cols-2 gap-12 items-center">
+          {/* Profile Image */}
+          <div className="flex justify-center xl:order-2">
+            <div className="relative group">
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-2xl opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-glow" />
+              <div className="relative glass-bright rounded-full p-3 gradient-border-bright">
+                <img
+                  src="https://miaoda-conversation-file.s3cdn.medo.dev/user-8zwnaxo7d7uo/20260117/file-8zwo1ojh301u.jpg"
+                  alt="Aditya Srivastava"
+                  className="w-64 h-64 xl:w-80 xl:h-80 rounded-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
 
-          <p className="text-2xl xl:text-3xl text-foreground font-semibold">
-            Competitive Programmer
-          </p>
+          {/* Content */}
+          <div className="text-center xl:text-left xl:order-1 space-y-6">
+            <h1 className="text-5xl xl:text-7xl font-bold">
+              <span className="gradient-text">Aditya Srivastava</span>
+            </h1>
 
-          <p className="text-lg xl:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
-            First-year CSE-AI student at KIET passionate about backend systems & algorithms
-          </p>
+            <p className="text-2xl xl:text-3xl text-white font-semibold">
+              Competitive Programmer
+            </p>
 
-          {/* Social Icons */}
-          <div className="flex items-center justify-center gap-6 pt-4">
-            {socialLinks.map((link) => (
-              <button
-                key={link.name}
-                onClick={() => window.open(link.url, '_blank')}
-                className="p-3 rounded-lg glass-strong hover:glass-bright hover:glow-primary transition-all duration-300"
-                aria-label={link.name}
-              >
-                <link.icon className="w-6 h-6 text-foreground" />
-              </button>
-            ))}
+            <p className="text-lg xl:text-xl text-white max-w-3xl leading-relaxed">
+              First-year CSE-AI student at KIET passionate about backend systems & algorithms
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex flex-wrap items-center justify-center xl:justify-start gap-4 pt-4">
+              {socialLinks.map((link) => (
+                <button
+                  key={link.name}
+                  onClick={() => window.open(link.url, '_blank')}
+                  className="p-3 rounded-lg glass-strong hover:glass-bright hover:glow-primary transition-all duration-300"
+                  aria-label={link.name}
+                >
+                  <link.icon className="w-6 h-6 text-white" />
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

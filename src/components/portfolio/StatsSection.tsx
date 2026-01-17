@@ -23,7 +23,7 @@ function StatCard({ platform, rating, detail, icon, color }: StatCardProps) {
         <div className="text-3xl font-bold gradient-text">
           {rating}
         </div>
-        <p className="text-sm text-muted-foreground font-medium">{detail}</p>
+        <p className="text-sm text-white font-medium">{detail}</p>
       </div>
     </div>
   );
@@ -68,7 +68,7 @@ export default function StatsSection() {
           <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
             Competitive Programming Stats
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white">
             170+ problems solved across multiple platforms
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function StatsSection() {
         <div className="mt-8 text-center">
           <div className="glass-bright rounded-2xl p-8 gradient-border-bright inline-block glow-accent">
             <div className="text-5xl font-bold gradient-text mb-2">170+</div>
-            <p className="text-lg text-foreground font-semibold">Total Problems Solved</p>
+            <p className="text-lg text-white font-semibold">Total Problems Solved</p>
           </div>
         </div>
       </div>

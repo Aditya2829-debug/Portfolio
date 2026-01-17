@@ -8,13 +8,13 @@ export default function ContactSection() {
           <h2 className="text-4xl xl:text-5xl font-bold gradient-text mb-4">
             Get In Touch
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white">
             Let's connect and build something amazing together
           </p>
         </div>
 
         <div className="glass-bright rounded-3xl p-12 gradient-border-bright text-center space-y-8">
-          <p className="text-xl text-foreground">
+          <p className="text-xl text-white">
             <a
               href="mailto:adityareachme1048@gmail.com"
               className="hover:text-primary transition-colors font-semibold"
@@ -23,7 +23,7 @@ export default function ContactSection() {
             </a>
           </p>
 
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white">
             Kanpur, India
           </p>
 
@@ -34,27 +34,27 @@ export default function ContactSection() {
               className="p-4 rounded-lg glass-strong hover:glass-bright hover:glow-primary transition-all duration-300"
               aria-label="GitHub"
             >
-              <Github className="w-7 h-7 text-foreground" />
+              <Github className="w-7 h-7 text-white" />
             </button>
             <button
               onClick={() => window.open('https://www.linkedin.com/in/aditya-srivastava-29884a380', '_blank')}
               className="p-4 rounded-lg glass-strong hover:glass-bright hover:glow-primary transition-all duration-300"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-7 h-7 text-foreground" />
+              <Linkedin className="w-7 h-7 text-white" />
             </button>
             <button
               onClick={() => window.open('https://leetcode.com/u/ArchitectOfSilence/', '_blank')}
               className="p-4 rounded-lg glass-strong hover:glass-bright hover:glow-primary transition-all duration-300"
               aria-label="LeetCode"
             >
-              <Code2 className="w-7 h-7 text-foreground" />
+              <Code2 className="w-7 h-7 text-white" />
             </button>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-16 text-center text-muted-foreground text-sm">
+        <div className="mt-16 text-center text-white/60 text-sm">
           <p>© 2026 Aditya Srivastava. Built with passion.</p>
         </div>
       </div>

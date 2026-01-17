@@ -12,7 +12,7 @@ export default function AboutSection() {
         </div>
 
         <div className="glass-bright rounded-3xl p-12 xl:p-16 gradient-border-bright">
-          <p className="text-lg xl:text-xl text-foreground leading-relaxed text-center">
+          <p className="text-lg xl:text-xl text-white leading-relaxed text-center">
             First-year CSE-AI student at KIET Group of Institutions, passionate about Java backend development and algorithmic problem-solving. Solved 172+ problems across platforms, achieved LeetCode 1530 rating. Currently learning Spring Boot and exploring GenAI & Web3. Active in Google Developers Group, DevUp, and Technocrats. Seeking internship opportunities.
           </p>
         </div>
