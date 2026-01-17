@@ -1,5 +1,3 @@
-import { Link } from 'react-router';
-
 export default function Header() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -11,9 +9,12 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold gradient-text">
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="text-2xl font-bold gradient-text cursor-pointer"
+          >
             ADITYA
-          </Link>
+          </button>
 
           {/* Navigation */}
           <nav className="flex items-center gap-8">
