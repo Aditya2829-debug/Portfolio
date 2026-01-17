@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 import { Trophy, Code, Flame, Star } from 'lucide-react';
 
 interface StatCardProps {
@@ -8,46 +6,11 @@ interface StatCardProps {
   detail: string;
   icon: React.ReactNode;
   color: string;
-  delay: number;
 }
 
-function StatCard({ platform, rating, detail, icon, color, delay }: StatCardProps) {
-  const { ref, hasIntersected } = useIntersectionObserver({
-    threshold: 0.3,
-    freezeOnceVisible: true,
-  });
-
-  const [count, setCount] = useState(0);
-  const targetNumber = Number.parseInt(rating.replace(/\D/g, ''));
-
-  useEffect(() => {
-    if (!hasIntersected || !targetNumber) return;
-
-    let start = 0;
-    const duration = 2000;
-    const increment = targetNumber / (duration / 16);
-
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= targetNumber) {
-        setCount(targetNumber);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
-
-    return () => clearInterval(timer);
-  }, [hasIntersected, targetNumber]);
-
+function StatCard({ platform, rating, detail, icon, color }: StatCardProps) {
   return (
-    <div
-      ref={ref}
-      className={`glass-bright rounded-2xl p-6 gradient-border-bright hover:scale-105 hover:glow-primary transition-all duration-300 ${
-        hasIntersected ? 'animate-slide-up' : 'opacity-0'
-      }`}
-      style={{ animationDelay: `${delay}ms` }}
-    >
+    <div className="glass-bright rounded-2xl p-6 gradient-border-bright hover:scale-105 hover:glow-primary transition-all duration-300">
       <div className="flex items-start justify-between mb-4">
         <div className={`p-3 rounded-xl glass-strong ${color}`}>
           {icon}
@@ -58,7 +21,7 @@ function StatCard({ platform, rating, detail, icon, color, delay }: StatCardProp
       </div>
       <div className="space-y-2">
         <div className="text-3xl font-bold gradient-text">
-          {targetNumber ? count : rating}
+          {rating}
         </div>
         <p className="text-sm text-muted-foreground font-medium">{detail}</p>
       </div>
@@ -111,11 +74,10 @@ export default function StatsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <StatCard
               key={stat.platform}
               {...stat}
-              delay={index * 100}
             />
           ))}
         </div>
