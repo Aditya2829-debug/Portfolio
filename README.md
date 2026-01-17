@@ -1,8 +1,4 @@
-# Welcome to Your Miaoda Project
-Miaoda Application Link URL
-    URL:=(http://localhost:5173/)
 
-# Welcome to Your Miaoda Project
 
 ## Project Info
 
