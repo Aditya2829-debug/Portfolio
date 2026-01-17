@@ -21,7 +21,7 @@ export default function AboutSection() {
 
         <div
           ref={ref}
-          className={`glass-strong rounded-2xl p-8 xl:p-12 gradient-border ${
+          className={`glass-bright rounded-2xl p-8 xl:p-12 gradient-border-bright ${
             hasIntersected ? 'animate-fade-in' : 'opacity-0'
           }`}
         >
@@ -56,9 +56,9 @@ export default function AboutSection() {
 
           {/* Decorative elements */}
           <div className="mt-8 flex justify-center gap-4">
-            <div className="w-16 h-1 bg-gradient-to-r from-primary to-transparent rounded-full" />
-            <div className="w-16 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full" />
-            <div className="w-16 h-1 bg-gradient-to-r from-accent to-transparent rounded-full" />
+            <div className="w-16 h-1 bg-gradient-to-r from-primary to-transparent rounded-full glow-primary" />
+            <div className="w-16 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full glow-secondary" />
+            <div className="w-16 h-1 bg-gradient-to-r from-accent to-transparent rounded-full glow-accent" />
           </div>
         </div>
       </div>

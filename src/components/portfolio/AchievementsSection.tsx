@@ -23,12 +23,12 @@ function AchievementCard({ achievement, index }: { achievement: Achievement; ind
       style={{ animationDelay: `${index * 150}ms` }}
     >
       {/* Timeline dot */}
-      <div className="flex-shrink-0 w-12 h-12 rounded-full glass-strong border-2 border-primary flex items-center justify-center glow-primary">
+      <div className="flex-shrink-0 w-12 h-12 rounded-full glass-bright border-2 border-primary flex items-center justify-center glow-primary">
         {achievement.icon}
       </div>
 
       {/* Content */}
-      <div className="flex-1 glass-strong rounded-2xl p-6 gradient-border hover:scale-105 transition-all duration-300">
+      <div className="flex-1 glass-bright rounded-2xl p-6 gradient-border-bright hover:scale-105 hover:glow-secondary transition-all duration-300">
         <h3 className="text-xl font-bold text-foreground mb-2">{achievement.title}</h3>
         <p className="text-muted-foreground">{achievement.description}</p>
       </div>

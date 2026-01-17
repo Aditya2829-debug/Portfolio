@@ -21,17 +21,17 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <div
       ref={ref}
-      className={`flex-shrink-0 w-80 xl:w-96 glass-strong rounded-2xl p-6 gradient-border hover:scale-105 transition-all duration-300 ${
+      className={`flex-shrink-0 w-80 xl:w-96 glass-bright rounded-2xl p-6 gradient-border-bright hover:scale-105 hover:glow-secondary transition-all duration-300 ${
         hasIntersected ? 'animate-scale-in' : 'opacity-0'
       }`}
       style={{ animationDelay: `${index * 150}ms` }}
     >
       <div className="flex items-start justify-between mb-4">
-        <div className="p-3 rounded-xl glass glow-primary">
+        <div className="p-3 rounded-xl glass-strong glow-primary">
           <Code2 className="w-6 h-6 text-primary" />
         </div>
         {project.status && (
-          <Badge variant="secondary" className="glass">
+          <Badge variant="secondary" className="glass-strong bg-accent/20 text-accent-foreground border-accent/30 font-semibold">
             {project.status}
           </Badge>
         )}
@@ -42,7 +42,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
       <div className="flex flex-wrap gap-2 mb-4">
         {project.techStack.map((tech) => (
-          <Badge key={tech} variant="outline" className="glass">
+          <Badge key={tech} variant="outline" className="glass-strong border-primary/30 text-foreground">
             {tech}
           </Badge>
         ))}
@@ -52,7 +52,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <Button
           variant="outline"
           size="sm"
-          className="glass hover:glass-strong w-full"
+          className="glass-strong hover:glass-bright hover:glow-primary w-full border-primary/30 text-primary font-semibold"
           onClick={() => window.open(project.link, '_blank')}
         >
           <ExternalLink className="w-4 h-4 mr-2" />

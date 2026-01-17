@@ -39,9 +39,9 @@ function SkillBar({ skill, index }: SkillBarProps) {
     >
       <div className="flex justify-between items-center">
         <span className="text-sm font-medium text-foreground">{skill.name}</span>
-        <span className="text-xs text-muted-foreground">{skill.level}%</span>
+        <span className="text-xs text-muted-foreground font-semibold">{skill.level}%</span>
       </div>
-      <div className="glass rounded-full p-1">
+      <div className="glass-strong rounded-full p-1 border border-primary/20">
         <Progress value={progress} className="h-2" />
       </div>
     </div>
@@ -94,7 +94,7 @@ export default function TechStackSection() {
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           {categories.map((category) => (
-            <div key={category} className="glass-strong rounded-2xl p-6 gradient-border">
+            <div key={category} className="glass-bright rounded-2xl p-6 gradient-border-bright hover:glow-primary transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary mb-6">{category}</h3>
               <div className="space-y-4">
                 {skills

@@ -43,16 +43,16 @@ function StatCard({ platform, rating, detail, icon, color, delay }: StatCardProp
   return (
     <div
       ref={ref}
-      className={`glass-strong rounded-2xl p-6 gradient-border hover:scale-105 transition-all duration-300 ${
+      className={`glass-bright rounded-2xl p-6 gradient-border-bright hover:scale-105 hover:glow-primary transition-all duration-300 ${
         hasIntersected ? 'animate-slide-up' : 'opacity-0'
       }`}
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="flex items-start justify-between mb-4">
-        <div className={`p-3 rounded-xl glass ${color}`}>
+        <div className={`p-3 rounded-xl glass-strong ${color}`}>
           {icon}
         </div>
-        <div className={`px-3 py-1 rounded-full text-xs font-semibold glass ${color}`}>
+        <div className={`px-3 py-1 rounded-full text-xs font-semibold glass-strong ${color}`}>
           {platform}
         </div>
       </div>
@@ -60,7 +60,7 @@ function StatCard({ platform, rating, detail, icon, color, delay }: StatCardProp
         <div className="text-3xl font-bold gradient-text">
           {targetNumber ? count : rating}
         </div>
-        <p className="text-sm text-muted-foreground">{detail}</p>
+        <p className="text-sm text-muted-foreground font-medium">{detail}</p>
       </div>
     </div>
   );
@@ -122,9 +122,9 @@ export default function StatsSection() {
 
         {/* Total Problems Solved */}
         <div className="mt-8 text-center">
-          <div className="glass-strong rounded-2xl p-8 gradient-border inline-block">
+          <div className="glass-bright rounded-2xl p-8 gradient-border-bright inline-block glow-accent">
             <div className="text-5xl font-bold gradient-text mb-2">170+</div>
-            <p className="text-lg text-muted-foreground">Total Problems Solved</p>
+            <p className="text-lg text-foreground font-semibold">Total Problems Solved</p>
           </div>
         </div>
       </div>

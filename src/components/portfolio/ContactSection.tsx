@@ -81,27 +81,27 @@ export default function ContactSection() {
         >
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="glass-strong rounded-2xl p-8 gradient-border">
+            <div className="glass-bright rounded-2xl p-8 gradient-border-bright">
               <h3 className="text-2xl font-bold text-foreground mb-6">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((info) => (
                   <div key={info.label} className="flex items-center gap-4">
-                    <div className="p-3 rounded-xl glass glow-primary">
+                    <div className="p-3 rounded-xl glass-strong glow-primary">
                       {info.icon}
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="text-sm text-muted-foreground font-medium">{info.label}</p>
                       {info.link ? (
                         <a
                           href={info.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-foreground hover:text-primary transition-colors"
+                          className="text-foreground hover:text-primary transition-colors font-semibold"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-foreground">{info.value}</p>
+                        <p className="text-foreground font-semibold">{info.value}</p>
                       )}
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export default function ContactSection() {
             </div>
 
             {/* Social Links */}
-            <div className="glass-strong rounded-2xl p-8 gradient-border">
+            <div className="glass-bright rounded-2xl p-8 gradient-border-bright">
               <h3 className="text-xl font-bold text-foreground mb-4">Follow Me</h3>
               <p className="text-muted-foreground mb-4">
                 Connect with me on social media and competitive programming platforms
@@ -121,7 +121,7 @@ export default function ContactSection() {
                     key={platform}
                     variant="outline"
                     size="sm"
-                    className="glass hover:glass-strong"
+                    className="glass-strong hover:glass-bright hover:glow-primary border-primary/30 text-primary font-semibold"
                   >
                     {platform}
                   </Button>
@@ -131,7 +131,7 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-strong rounded-2xl p-8 gradient-border">
+          <div className="glass-bright rounded-2xl p-8 gradient-border-bright">
             <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -141,12 +141,12 @@ export default function ContactSection() {
                   rules={{ required: 'Name is required' }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel className="text-foreground font-semibold">Name</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           placeholder="Your name"
-                          className="glass border-border"
+                          className="glass-strong border-border text-foreground"
                         />
                       </FormControl>
                       <FormMessage />
@@ -166,13 +166,13 @@ export default function ContactSection() {
                   }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="text-foreground font-semibold">Email</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           type="email"
                           placeholder="your.email@example.com"
-                          className="glass border-border"
+                          className="glass-strong border-border text-foreground"
                         />
                       </FormControl>
                       <FormMessage />
@@ -186,13 +186,13 @@ export default function ContactSection() {
                   rules={{ required: 'Message is required' }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel className="text-foreground font-semibold">Message</FormLabel>
                       <FormControl>
                         <Textarea
                           {...field}
                           placeholder="Your message..."
                           rows={5}
-                          className="glass border-border resize-none"
+                          className="glass-strong border-border resize-none text-foreground"
                         />
                       </FormControl>
                       <FormMessage />
@@ -203,7 +203,7 @@ export default function ContactSection() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full glass-strong hover:glow-primary transition-all duration-300"
+                  className="w-full glass-bright hover:glow-primary transition-all duration-300 bg-primary/20 border-primary/30 text-foreground font-bold"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

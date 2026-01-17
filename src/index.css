@@ -13,100 +13,100 @@ Glassmorphism Portfolio Design System
     --radius: 0.75rem;
     
     /* Deep Blue to Purple Gradient Background */
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 222 47% 8%;
+    --foreground: 0 0% 100%;
     
-    /* Glassmorphism Cards - Semi-transparent with blur */
-    --card: 240 20% 15%;
-    --card-foreground: 210 40% 98%;
+    /* Glassmorphism Cards - Brighter with better contrast */
+    --card: 240 30% 20%;
+    --card-foreground: 0 0% 100%;
     
-    --popover: 240 20% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 30% 20%;
+    --popover-foreground: 0 0% 100%;
     
-    /* Primary: Vibrant Purple/Blue */
-    --primary: 250 70% 60%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 270 80% 70%;
+    /* Primary: Brighter Vibrant Purple */
+    --primary: 250 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 90% 75%;
     
-    /* Secondary: Cyan/Teal accent */
-    --secondary: 190 70% 50%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary: Brighter Cyan accent */
+    --secondary: 190 85% 60%;
+    --secondary-foreground: 0 0% 100%;
     
-    /* Muted: Darker glass effect */
-    --muted: 240 15% 20%;
-    --muted-foreground: 215 20% 65%;
+    /* Muted: Lighter for better readability */
+    --muted: 240 20% 25%;
+    --muted-foreground: 220 15% 75%;
     
-    /* Accent: Bright highlight */
-    --accent: 280 60% 55%;
-    --accent-foreground: 210 40% 98%;
+    /* Accent: Bright Pink/Magenta highlight */
+    --accent: 320 80% 65%;
+    --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
     
-    /* Glass borders with glow */
-    --border: 240 30% 25%;
-    --input: 240 20% 20%;
-    --ring: 250 70% 60%;
+    /* Glass borders - brighter with more contrast */
+    --border: 240 40% 35%;
+    --input: 240 30% 25%;
+    --ring: 250 85% 65%;
     
-    /* Platform colors for competitive programming */
-    --leetcode: 43 100% 50%;
-    --codechef: 25 95% 53%;
-    --codeforces: 210 100% 56%;
-    --hackerrank: 152 69% 31%;
+    /* Platform colors - brighter versions */
+    --leetcode: 43 100% 60%;
+    --codechef: 25 95% 60%;
+    --codeforces: 210 100% 65%;
+    --hackerrank: 152 69% 45%;
     
-    /* Chart colors */
-    --chart-1: 250 70% 60%;
-    --chart-2: 190 70% 50%;
-    --chart-3: 280 60% 55%;
-    --chart-4: 43 100% 50%;
-    --chart-5: 152 69% 31%;
+    /* Chart colors - brighter */
+    --chart-1: 250 85% 65%;
+    --chart-2: 190 85% 60%;
+    --chart-3: 320 80% 65%;
+    --chart-4: 43 100% 60%;
+    --chart-5: 152 69% 45%;
     
-    /* Sidebar (not used in portfolio but keeping for compatibility) */
-    --sidebar-background: 240 20% 12%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 250 70% 60%;
-    --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 240 15% 20%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 240 30% 25%;
-    --sidebar-ring: 250 70% 60%;
+    /* Sidebar */
+    --sidebar-background: 240 30% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 250 85% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 20% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 40% 35%;
+    --sidebar-ring: 250 85% 65%;
   }
 
   .dark {
-    /* Dark mode uses same glassmorphism theme */
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
-    --card: 240 20% 15%;
-    --card-foreground: 210 40% 98%;
-    --popover: 240 20% 15%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 250 70% 60%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 270 80% 70%;
-    --secondary: 190 70% 50%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 240 15% 20%;
-    --muted-foreground: 215 20% 65%;
-    --accent: 280 60% 55%;
-    --accent-foreground: 210 40% 98%;
+    /* Dark mode uses same enhanced glassmorphism theme */
+    --background: 222 47% 8%;
+    --foreground: 0 0% 100%;
+    --card: 240 30% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 30% 20%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 250 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 90% 75%;
+    --secondary: 190 85% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 20% 25%;
+    --muted-foreground: 220 15% 75%;
+    --accent: 320 80% 65%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 240 30% 25%;
-    --input: 240 20% 20%;
-    --ring: 250 70% 60%;
-    --chart-1: 250 70% 60%;
-    --chart-2: 190 70% 50%;
-    --chart-3: 280 60% 55%;
-    --chart-4: 43 100% 50%;
-    --chart-5: 152 69% 31%;
-    --sidebar-background: 240 20% 12%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 250 70% 60%;
-    --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 240 15% 20%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 240 30% 25%;
-    --sidebar-ring: 250 70% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 40% 35%;
+    --input: 240 30% 25%;
+    --ring: 250 85% 65%;
+    --chart-1: 250 85% 65%;
+    --chart-2: 190 85% 60%;
+    --chart-3: 320 80% 65%;
+    --chart-4: 43 100% 60%;
+    --chart-5: 152 69% 45%;
+    --sidebar-background: 240 30% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 250 85% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 20% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 40% 35%;
+    --sidebar-ring: 250 85% 65%;
   }
 }
 
@@ -128,45 +128,75 @@ Glassmorphism Portfolio Design System
 }
 
 @layer utilities {
-  /* Glassmorphism effect */
+  /* Enhanced Glassmorphism effects with better contrast */
   .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
   
   .glass-strong {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
   
-  /* Gradient text effect */
+  .glass-bright {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  /* Gradient text effect - brighter */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    animation: gradient-shift 3s ease infinite;
   }
   
-  /* Glow effects */
+  /* Enhanced glow effects with better visibility */
   .glow-primary {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3), 0 0 40px rgba(139, 92, 246, 0.1);
+    box-shadow: 0 0 30px rgba(167, 139, 250, 0.5), 
+                0 0 60px rgba(167, 139, 250, 0.3),
+                0 0 90px rgba(167, 139, 250, 0.1);
   }
   
   .glow-secondary {
-    box-shadow: 0 0 20px rgba(34, 211, 238, 0.3), 0 0 40px rgba(34, 211, 238, 0.1);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.5), 
+                0 0 60px rgba(56, 189, 248, 0.3),
+                0 0 90px rgba(56, 189, 248, 0.1);
   }
   
-  /* Animated gradient border */
+  .glow-accent {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.5), 
+                0 0 60px rgba(236, 72, 153, 0.3),
+                0 0 90px rgba(236, 72, 153, 0.1);
+  }
+  
+  /* Animated gradient border - brighter */
   .gradient-border {
     position: relative;
     border: 2px solid transparent;
-    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)) padding-box,
-                linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary))) border-box;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)) padding-box,
+                linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent))) border-box;
+  }
+  
+  .gradient-border-bright {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)) padding-box,
+                linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent))) border-box;
+    box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
   }
   
   /* Hide scrollbar but keep functionality */

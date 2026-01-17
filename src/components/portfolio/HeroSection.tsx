@@ -55,8 +55,8 @@ export default function HeroSection() {
           {/* Profile Image */}
           <div className="flex justify-center xl:order-2">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse-glow" />
-              <div className="relative glass-strong rounded-full p-2">
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-2xl opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-glow" />
+              <div className="relative glass-bright rounded-full p-3 gradient-border-bright">
                 <img
                   src="https://miaoda-conversation-file.s3cdn.medo.dev/user-8zwnaxo7d7uo/20260117/file-8zwo1ojh301u.jpg"
                   alt="Aditya Srivastava"
@@ -80,8 +80,8 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="glass rounded-2xl p-6 xl:p-8 gradient-border animate-fade-in">
-              <p className="text-base xl:text-lg text-muted-foreground leading-relaxed">
+            <div className="glass-bright rounded-2xl p-6 xl:p-8 gradient-border-bright animate-fade-in">
+              <p className="text-base xl:text-lg text-foreground leading-relaxed">
                 First-year CSE-AI student at KIET passionate about backend systems & algorithms
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function HeroSection() {
                   key={link.name}
                   variant="outline"
                   size="lg"
-                  className="glass hover:glass-strong hover:scale-105 transition-all duration-300 glow-primary"
+                  className="glass-strong hover:glass-bright hover:scale-105 hover:glow-primary transition-all duration-300 border-primary/30 text-primary font-semibold"
                   style={{ animationDelay: `${index * 100}ms` }}
                   onClick={() => window.open(link.url, '_blank')}
                 >
@@ -109,7 +109,7 @@ export default function HeroSection() {
       {/* Scroll Indicator */}
       <button
         onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 glass rounded-full p-3 animate-bounce hover:glass-strong transition-all cursor-pointer"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 glass-strong rounded-full p-3 animate-bounce hover:glass-bright hover:glow-primary transition-all cursor-pointer"
         aria-label="Scroll to next section"
       >
         <ChevronDown className="w-6 h-6 text-primary" />

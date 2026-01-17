@@ -58,22 +58,22 @@ export default function FloatingNav() {
 
   return (
     <nav className="fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden xl:block">
-      <div className="glass-strong rounded-full p-3 space-y-2 gradient-border">
+      <div className="glass-bright rounded-full p-3 space-y-2 gradient-border-bright glow-primary">
         {navItems.map((item) => (
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
             className={`group relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${
               activeSection === item.id
-                ? 'bg-primary text-primary-foreground glow-primary'
-                : 'hover:bg-muted text-muted-foreground hover:text-foreground'
+                ? 'bg-primary text-primary-foreground glow-primary scale-110'
+                : 'hover:bg-muted/50 text-muted-foreground hover:text-foreground hover:scale-105'
             }`}
             aria-label={item.label}
           >
             {item.icon}
             
             {/* Tooltip */}
-            <span className="absolute right-full mr-3 px-3 py-1 bg-muted text-foreground text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            <span className="absolute right-full mr-3 px-3 py-1 glass-bright text-foreground text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-primary/30 font-semibold">
               {item.label}
             </span>
           </button>
