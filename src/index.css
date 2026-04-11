@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply select-none font-sans bg-base text-white m-0 p-0 overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-border {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+    color: transparent;
+  }
+}
+
+/* Canvas gets fixed to the background behind everything */
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; /* Allows scrolling on top of it */
+}
