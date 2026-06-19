@@ -50,23 +50,41 @@ export default function Hero() {
         </div>
         
         <div className="overflow-hidden">
-          <h1 ref={addToRefs} className="text-[12vw] leading-[0.85] font-display font-black tracking-tighter">
+          <h1 ref={addToRefs} className="text-[9.5vw] md:text-[10.5vw] lg:text-[12vw] leading-[0.85] font-display font-black tracking-tighter">
             ADITYA
           </h1>
         </div>
         
         <div className="overflow-hidden mb-8">
-          <h1 ref={addToRefs} className="text-[12vw] leading-[0.85] font-display font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-accent">
+          <h1 ref={addToRefs} className="text-[9.5vw] md:text-[10.5vw] lg:text-[12vw] leading-[0.85] font-display font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-accent">
             SRIVASTAVA
           </h1>
         </div>
 
         <div className="overflow-hidden max-w-3xl">
-          <p ref={addToRefs} className="font-sans font-light text-xl md:text-3xl leading-relaxed text-white/80">
-            India-based Backend Developer, 
-            <span className="text-white font-medium"> Java Specialist </span> 
-            and <span className="italic text-primary">Competitive Programmer</span>.
+          <p ref={addToRefs} className="font-sans font-light text-xl md:text-3xl leading-relaxed text-zinc-200 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+            <span className="text-white font-bold">Full-Stack Developer</span>, 
+            AI Integration Specialist and <span className="italic text-primary font-medium">Competitive Programmer</span>.
           </p>
+        </div>
+
+        <div className="overflow-hidden mt-8">
+          <div ref={addToRefs}>
+            <a 
+              href="#projects" 
+              className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-white font-medium text-sm transition-all duration-300 hover:border-primary/40 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(255,74,74,0.15)] group cursor-pointer"
+            >
+              <span>View Projects</span>
+              <svg 
+                className="w-4 h-4 text-white/70 group-hover:text-white transition-colors duration-300 transform group-hover:translate-x-1" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>

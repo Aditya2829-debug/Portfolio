@@ -38,7 +38,7 @@ export default function About() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative min-h-[150vh] w-full px-6 md:px-16 pt-32 pb-32 z-10 bg-surface/50 backdrop-blur-sm">
+    <section id="about" ref={sectionRef} className="relative min-h-[150vh] w-full px-6 md:px-16 pt-32 pb-32 z-10 bg-surface/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 relative h-full">
         
         {/* Pinned Left Column */}
