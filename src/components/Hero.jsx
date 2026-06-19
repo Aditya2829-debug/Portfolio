@@ -50,13 +50,13 @@ export default function Hero() {
         </div>
         
         <div className="overflow-hidden">
-          <h1 ref={addToRefs} className="text-[9.5vw] md:text-[10.5vw] lg:text-[12vw] leading-[0.85] font-display font-black tracking-tighter">
+          <h1 ref={addToRefs} className="text-[clamp(2.8rem,9vw,9rem)] leading-[0.85] font-display font-black tracking-tighter">
             ADITYA
           </h1>
         </div>
         
         <div className="overflow-hidden mb-8">
-          <h1 ref={addToRefs} className="text-[9.5vw] md:text-[10.5vw] lg:text-[12vw] leading-[0.85] font-display font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-accent">
+          <h1 ref={addToRefs} className="text-[clamp(2.4rem,7.5vw,7.5rem)] leading-[0.85] font-display font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-accent">
             SRIVASTAVA
           </h1>
         </div>
