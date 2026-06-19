@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <footer className="h-screen w-full flex flex-col items-center justify-between bg-surface relative z-10 pt-32 pb-8 overflow-hidden">
+    <footer className="min-h-screen md:h-screen w-full flex flex-col items-center justify-between bg-surface relative z-10 pt-24 pb-8 overflow-visible">
       
-      <div className="flex-1 flex flex-col items-center justify-center w-full px-10 md:px-16 lg:px-24 text-center max-w-7xl mx-auto">
+      <div className="flex-1 flex flex-col items-center justify-center w-full px-6 md:px-16 lg:px-24 text-center max-w-7xl mx-auto">
         <p className="text-accent uppercase tracking-widest text-sm font-semibold mb-6">Want to collaborate?</p>
         <a href="mailto:krishsrivatava999@gmail.com" className="w-full max-w-full overflow-hidden block">
-          <h2 className="text-[10vw] md:text-[11vw] lg:text-[12vw] leading-none font-display font-black text-transparent text-border cursor-pointer hover:text-white transition-colors duration-500 break-words tracking-tight py-4 px-2">
+          <h2 className="text-[clamp(2.2rem,7.5vw,9.5rem)] leading-none font-display font-black text-transparent text-border cursor-pointer hover:text-white transition-colors duration-500 whitespace-nowrap tracking-tight py-4 px-2">
             GET IN TOUCH
           </h2>
         </a>
