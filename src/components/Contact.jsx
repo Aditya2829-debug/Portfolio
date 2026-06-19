@@ -6,8 +6,8 @@ export default function Contact() {
       
       <div className="flex-1 flex flex-col items-center justify-center w-full px-6 md:px-16 lg:px-24 text-center max-w-7xl mx-auto">
         <p className="text-accent uppercase tracking-widest text-sm font-semibold mb-6">Want to collaborate?</p>
-        <a href="mailto:krishsrivatava999@gmail.com" className="w-full max-w-full overflow-hidden block">
-          <h2 className="text-[clamp(2.2rem,7.5vw,9.5rem)] leading-none font-display font-black text-transparent text-border cursor-pointer hover:text-white transition-colors duration-500 whitespace-nowrap tracking-tight py-4 px-2">
+        <a href="mailto:krishsrivatava999@gmail.com" className="w-full max-w-full block">
+          <h2 className="text-[clamp(2rem,6.2vw,6.2rem)] leading-none font-display font-black text-white cursor-pointer hover:text-primary transition-colors duration-500 whitespace-nowrap tracking-tighter py-4 px-2">
             GET IN TOUCH
           </h2>
         </a>

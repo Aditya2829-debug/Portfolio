@@ -2,6 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+// Import project preview images for solid bundling
+import greenAiImg from '../assets/projects/green-ai-analyser.png';
+import collegeClubImg from '../assets/projects/college-club-portal.png';
+import bankMgmtImg from '../assets/projects/bank-mgmt-system.png';
+import nyxLegalImg from '../assets/projects/nyxlegal.png';
+import cyborgImg from '../assets/projects/cyborg-landing-page.png';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const projectsData = [
@@ -10,7 +17,7 @@ const projectsData = [
     desc: "An AI-powered carbon footprint calculator developed for the Net Zero initiative as part of the InnoTech Hackathon. Uses predictive models to optimize efficiency.",
     tech: ["Python", "AI/ML", "Data Analytics"],
     color: "#9333EA",
-    image: "/assets/projects/green-ai-analyser.jpg",
+    image: greenAiImg,
     link: "https://github.com/Aditya2829-debug"
   },
   {
@@ -18,21 +25,21 @@ const projectsData = [
     desc: "A comprehensive tech club portal featuring real-time event management systems and multi-tier member registration functionalities.",
     tech: ["HTML", "CSS", "JavaScript"],
     color: "#ffc6d9",
-    image: "/assets/projects/college-club-portal.jpg"
+    image: collegeClubImg
   },
   {
     title: "Bank Mgmt System",
     desc: "A robust Java-based desktop application utilizing Swing and JavaFX for a rich GUI, handling concurrent core banking operations and secured transactions.",
     tech: ["Java", "Swing", "JDBC", "MySQL"],
     color: "#FF4A4A",
-    image: "/assets/projects/bank-mgmt-system.jpg"
+    image: bankMgmtImg
   },
   {
     title: "NyxLegal",
     desc: "An AI-powered legal assistance web app simplifying access to legal information for non-expert users, with conversational AI for document summarization and contextual legal guidance.",
     tech: ["JavaScript", "Firebase", "AI Integration"],
     color: "#4F46E5",
-    image: "/assets/projects/nyxlegal.jpg",
+    image: nyxLegalImg,
     link: "https://github.com/Aditya2829-debug/NyxLegal"
   },
   {
@@ -40,7 +47,7 @@ const projectsData = [
     desc: "A cyborg-themed interactive landing page built for Techfest IIT Bombay, featuring 3D elements and smooth animations.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Spline"],
     color: "#06B6D4",
-    image: "/assets/projects/cyborg-landing-page.jpg"
+    image: cyborgImg
   }
 ];
 
